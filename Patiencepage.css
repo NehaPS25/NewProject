@@ -1,0 +1,49 @@
+.patients-container {
+  margin: 30px;
+  display: flex;
+  flex-direction: column; /* keep search bar on top */
+  gap: 20px;
+}
+
+/* Search Bar */
+.patients-container input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Cards Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;  
+  flex-direction: row;     /* allow multiple rows if needed */
+  gap: 20px;             /* spacing between cards */
+}
+
+/* Card Wrapper */
+.card-wrapper {
+  flex: 0 0 300px; /* fixed width for each card */
+}
+
+/* Individual Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Modal overlay fix */
+.modal.show.d-block {
+  display: flex !important;
+  justify-content: left;
+  align-items: center;
+}
